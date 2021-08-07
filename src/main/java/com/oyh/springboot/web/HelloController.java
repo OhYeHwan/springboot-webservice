@@ -11,6 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 */
 @RestController
 public class HelloController {
+
+    @GetMapping("/hello")
+    public String hello() {
+        return "hello";
+    }
+
     @GetMapping("/hello/dto") // HTTP Method 인 Get 의 요청을 받을 수 있는 API 를 만들어 준다.
     public HelloResponseDto helloDto(@RequestParam("name") String name, @RequestParam("amount") int amount) {
         /*
