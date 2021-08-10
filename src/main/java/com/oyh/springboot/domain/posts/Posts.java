@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Getter // 롬복 어노테이션
 @NoArgsConstructor // 롬복 어노테이션
 @Entity // 테이블과 링크될 클래스임을 알림 - 디폴트 값으로 클래스의 카멜케이스 이름을 언더스코어 네이밍으로 테이블 이름을 매칭한다.
-public class Posts {
+public class Posts extends BaseTimeEntity{
     @Id // 해당 테이블의 PK 필드를 나타낸다.
     @GeneratedValue(strategy = GenerationType.IDENTITY) // PK의 생성규칙을 나타낸다.
     private Long id;
