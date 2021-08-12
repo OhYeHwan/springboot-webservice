@@ -2,6 +2,7 @@ package com.oyh.springboot.service.posts;
 
 import com.oyh.springboot.domain.posts.Posts;
 import com.oyh.springboot.domain.posts.PostsRepository;
+import com.oyh.springboot.web.dto.PostsListResponseDto;
 import com.oyh.springboot.web.dto.PostsResponseDto;
 import com.oyh.springboot.web.dto.PostsSaveRequestDto;
 import com.oyh.springboot.web.dto.PostsUpdateRequestDto;
