@@ -4,6 +4,9 @@ var main = {
         $('#btn-save').on('click', function() {
             _this.save();
         });
+        $('#btn-update').on('click', function() {
+            _this.update();
+        });
     },
     save : function() {
         var data = {
@@ -35,7 +38,7 @@ var main = {
 
         $.ajax({
             type: 'PUT',
-            url: '/api/v1/posts/' + id,
+            url: '/api/v1/posts/'+id,
             dataType: 'json',
             contentType: 'application/json; charset=utf-8',
             data: JSON.stringify(data)
