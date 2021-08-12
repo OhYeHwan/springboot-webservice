@@ -24,7 +24,7 @@ var main = {
         }).fail(function() {
             alert(JSON.stringify(error));
         });
-    }
+    },
     update : function() {
         var data = {
             title: $('#title').val(),
